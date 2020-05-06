@@ -21,7 +21,7 @@ class Confirm extends Component {
 
   render() {
     const {
-      values: { firstName, lastName, email, occupation, city, bio },
+      values: { firstName, lastName, email, occupation, city, bio }, title
     } = this.props;
     return (
       <React.Fragment>
@@ -35,7 +35,7 @@ class Confirm extends Component {
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6">Confirm</Typography>
+            <Typography variant="h6">{title}</Typography>
           </Toolbar>
         </AppBar>
         <br />

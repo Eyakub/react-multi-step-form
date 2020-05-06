@@ -46,6 +46,7 @@ class UserForm extends Component {
       case 1:
         return (
           <FormUserDetails
+            title='Enter User Information'
             nextStep={this.nextStep}
             handleChange={this.handleChange}
             values={values}
@@ -54,6 +55,7 @@ class UserForm extends Component {
       case 2:
         return (
           <FormPersonalDetails
+            title='Enter Personal Information'
             nextStep={this.nextStep}
             previousStep={this.previousStep}
             handleChange={this.handleChange}
@@ -63,13 +65,14 @@ class UserForm extends Component {
       case 3:
         return (
           <Confirm
+            title='Confirm'
             nextStep={this.nextStep}
             previousStep={this.previousStep}
             values={values}
           />
         );
       case 4:
-        return <Success />;
+        return <Success title='Success' />;
       default:
         return null;
     }

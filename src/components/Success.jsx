@@ -10,7 +10,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 class Success extends Component {
 
   render() {
-    
+    const { title } = this.props;
     return (
       <React.Fragment>
         <AppBar position="static">
@@ -23,11 +23,13 @@ class Success extends Component {
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6">Confirm</Typography>
+            <Typography variant="h6">{title}</Typography>
           </Toolbar>
         </AppBar>
-        <h1>Thank you for your submission</h1>
-        <p>You will get an email with further instruction</p>
+        <div>
+          <h1>Thank you for your submission</h1>
+          <p>You will get an email with further instruction</p>
+        </div>
       </React.Fragment>
     );
   }

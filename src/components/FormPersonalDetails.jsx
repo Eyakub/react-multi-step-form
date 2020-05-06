@@ -24,7 +24,7 @@ class FormPersonalDetails extends Component {
 
 
   render() {
-    const { values, handleChange } = this.props;
+    const { values, handleChange, title } = this.props;
     return (
       <React.Fragment>
         <AppBar position="static">
@@ -37,7 +37,7 @@ class FormPersonalDetails extends Component {
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6">Enter Personal Details</Typography>
+            <Typography variant="h6">{title}</Typography>
           </Toolbar>
         </AppBar>
         <br/>

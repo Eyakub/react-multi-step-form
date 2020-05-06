@@ -19,7 +19,7 @@ class FormUserDetails extends Component {
 
 
   render() {
-    const { values, handleChange } = this.props;
+    const { values, handleChange, title } = this.props;
     return (
       <React.Fragment>
         <AppBar position="static">
@@ -32,7 +32,7 @@ class FormUserDetails extends Component {
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6">Enter User Details</Typography>
+            <Typography variant="h6">{title}</Typography>
           </Toolbar>
         </AppBar>
         <br/>
